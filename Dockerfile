@@ -13,7 +13,7 @@ ENV INSTALL_DIR /var/www/html
 
 RUN apt-get update && \
     apt-get install -y mysql-client-5.7 libxml2-dev libmcrypt4 libmcrypt-dev libpng-dev libjpeg-dev libfreetype6 libfreetype6-dev git && \
-    mkdir /tmp/magento-demo && git clone https://github.com/mengchong2018/magento-mirror /tmp/magento-demo && \
+    mkdir /tmp/magento-demo && git clone https://github.com/dlqkadl/magento-mirror /tmp/magento-demo && \
     mv /tmp/magento-demo/* /tmp/magento-demo/.htaccess $INSTALL_DIR
     
 RUN chown -R www-data:www-data $INSTALL_DIR
